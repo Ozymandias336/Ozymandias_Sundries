@@ -20,6 +20,10 @@ public class ModItems {
             () -> new SwordItem(DIAMOND, new Item.Properties()
                     .attributes(SwordItem.createAttributes(DIAMOND, 6, -2.4f))));
 
+    public static final DeferredItem<SwordItem> CINDEROUS_SCIMITAR = ITEMS.register("cinderous_scimitar",
+            () -> new SwordItem(DIAMOND, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(DIAMOND, 6, -2.4f))));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

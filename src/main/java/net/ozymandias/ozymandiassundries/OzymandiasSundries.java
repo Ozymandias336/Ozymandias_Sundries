@@ -68,6 +68,7 @@ public class OzymandiasSundries {
     { if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
         event.accept(ModItems.SACRIFICIAL_KRIS);
         event.accept(ModItems.SANCTIFIED_SWORD);
+        event.accept(ModItems.CINDEROUS_SCIMITAR);
     }
     }
 
