@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  b",
+    "mb ",
+    "wm "
+  ],
+  "result": {
+    "id": "ozymandias_sundries:sacrificial_kris",
+    "count": 1
+  },
+  "key": {
+    "m": {
+      "item": "irons_spellbooks:blood_vial"
+    },
+    "b": {
+      "item": "irons_spellbooks:mithril_ingot"
+    },
+    "w": {
+      "item": "irons_spellbooks:weapon_parts"
+    }
+  }
+}

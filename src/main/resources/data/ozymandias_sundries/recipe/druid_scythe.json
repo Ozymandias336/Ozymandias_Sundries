@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "vsm",
+    "s  "
+  ],
+  "result": {
+    "id": "ozymandias_sundries:druid_scythe",
+    "count": 1
+  },
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "m": {
+      "item": "irons_spellbooks:mithril_ingot"
+    },
+    "v": {
+      "item": "minecraft:vine"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  m",
+    "dm ",
+    "wd "
+  ],
+  "result": {
+    "id": "ozymandias_sundries:sanctified_sword",
+    "count": 1
+  },
+  "key": {
+    "d": {
+      "item": "irons_spellbooks:divine_pearl"
+    },
+    "m": {
+      "item": "irons_spellbooks:mithril_ingot"
+    },
+    "w": {
+      "item": "irons_spellbooks:weapon_parts"
+    }
+  }
+}

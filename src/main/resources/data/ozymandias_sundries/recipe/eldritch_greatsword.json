@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " em",
+    "ere",
+    "we "
+  ],
+  "result": {
+    "id": "ozymandias_sundries:eldritch_greatsword",
+    "count": 1
+  },
+  "key": {
+    "e": {
+      "item": "minecraft:echo_shard"
+    },
+    "m": {
+      "item": "irons_spellbooks:mithril_ingot"
+    },
+    "w": {
+      "item": "irons_spellbooks:weapon_parts"
+    },
+    "r": {
+      "item": "irons_spellbooks:ruined_book"
+    }
+  }
+}

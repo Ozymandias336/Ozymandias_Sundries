@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mpm",
+    "mfm",
+    " f "
+  ],
+  "result": {
+    "id": "ozymandias_sundries:permafrost_axe",
+    "count": 1
+  },
+  "key": {
+    "p": {
+      "item": "irons_spellbooks:permafrost_shard"
+    },
+    "m": {
+      "item": "irons_spellbooks:mithril_ingot"
+    },
+    "f": {
+      "item": "irons_spellbooks:frosted_helve"
+    }
+  }
+}

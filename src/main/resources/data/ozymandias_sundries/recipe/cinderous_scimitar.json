@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " cm",
+    "cmc",
+    "wc "
+  ],
+  "result": {
+    "id": "ozymandias_sundries:cinderous_scimitar",
+    "count": 1
+  },
+  "key": {
+    "c": {
+      "item": "irons_spellbooks:cinder_essence"
+    },
+    "m": {
+      "item": "irons_spellbooks:mithril_ingot"
+    },
+    "w": {
+      "item": "irons_spellbooks:weapon_parts"
+    }
+  }
+}

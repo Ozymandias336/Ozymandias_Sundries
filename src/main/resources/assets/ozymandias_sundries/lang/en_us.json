@@ -1,5 +1,13 @@
 {
   "item.ozymandias_sundries.sacrificial_kris": "Sacrificial Kris",
   "item.ozymandias_sundries.sanctified_sword": "Sanctified Sword",
-  "item.ozymandias_sundries.cinderous_scimitar": "Cinderous Scimitar"
+  "item.ozymandias_sundries.cinderous_scimitar": "Cinderous Scimitar",
+  "item.ozymandias_sundries.permafrost_axe": "Permafrost Axe",
+  "item.ozymandias_sundries.eldritch_greatsword": "Eldritch Greatsword",
+  "item.ozymandias_sundries.druid_scythe": "Druid Scythe",
+  "item.ozymandias_sundries.fulminous_folio": "Fulminous Folio",
+
+
+
+  "creative_tab.ozymandias_sundries.ozy_items": "Ozymandias' Sundries"
 }
