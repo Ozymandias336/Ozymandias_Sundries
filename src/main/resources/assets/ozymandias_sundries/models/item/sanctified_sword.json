@@ -1,0 +1,16 @@
+{
+  "parent": "minecraft:item/handheld",
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/handheld",
+      "textures": {
+        "layer0": "ozymandias_sundries:item/sanctified_sword"
+      }
+    }
+  },
+  "textures": {
+    "layer0": "ozymandias_sundries:item/sanctified_sword"
+  }
+}
+
+
