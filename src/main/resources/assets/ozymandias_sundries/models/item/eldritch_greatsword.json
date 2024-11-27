@@ -4,14 +4,14 @@
   "base": {
     "parent": "irons_spellbooks:item/template_large_sword",
     "textures": {
-      "layer0": "ozymandias_sundries:item/sanctified_sword"
+      "layer0": "ozymandias_sundries:item/eldritch_greatsword"
     }
   },
   "perspectives": {
     "gui": {
       "parent": "minecraft:item/handheld",
       "textures": {
-        "layer0": "ozymandias_sundries:item/sanctified_sword_gui"
+        "layer0": "ozymandias_sundries:item/eldritch_greatsword"
       }
     }
   }

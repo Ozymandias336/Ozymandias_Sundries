@@ -24,6 +24,20 @@ public class ModItems {
             () -> new SwordItem(DIAMOND, new Item.Properties()
                     .attributes(SwordItem.createAttributes(DIAMOND, 6, -2.4f))));
 
+    public static final DeferredItem<SwordItem> PERMAFROST_AXE = ITEMS.register("permafrost_axe",
+            () -> new SwordItem(DIAMOND, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(DIAMOND, 8, -2.9f))));
+
+    public static final DeferredItem<SwordItem> ELDRITCH_GREATSWORD = ITEMS.register("eldritch_greatsword",
+            () -> new SwordItem(DIAMOND, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(DIAMOND, 10, -3.1f))));
+
+    public static final DeferredItem<SwordItem> DRUID_SCYTHE = ITEMS.register("druid_scythe",
+            () -> new SwordItem(DIAMOND, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(DIAMOND, 7, -2.5f))));
+
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
