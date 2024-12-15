@@ -43,6 +43,16 @@ repositories {
         url = "https://modmaven.dev"
     }
 
+    maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content {
+            includeGroup("software.bernie.geckolib")
+        }
+    }
+
+    maven { url = 'https://maven.azuredoom.com/mods'}
+
 
 }
 
@@ -139,13 +149,21 @@ configurations {
 }
 
 dependencies {
-    implementation "io.redspace:irons_spellbooks:1.21-3.8.4"
+
+    implementation "io.redspace:irons_spellbooks:1.21-3.8.6"
     runtimeOnly "curse.maven:adorned-1036809:${5740650}"
     compileOnly "curse.maven:adorned-1036809:${5740650}"
+
+    implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
 
     compileOnly "mezz.jei:jei-${jei_mc_version}-common-api:${jei_version}"
     compileOnly "mezz.jei:jei-${jei_mc_version}-neoforge-api:${jei_version}"
     runtimeOnly "mezz.jei:jei-${jei_mc_version}-neoforge:${jei_version}"
+//    implementation "software.bernie.geckolib:geckolib-neoforge-${minecraftVersion}:${geckolib_version}"
+    //implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.20.1:4.3.1')
+ //   implementation "mod.azure.azurelib:azurelib-neo-1.21:2.3.15"
+
+
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

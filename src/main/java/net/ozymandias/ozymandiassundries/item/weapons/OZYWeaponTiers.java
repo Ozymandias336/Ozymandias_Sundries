@@ -14,6 +14,7 @@ import java.util.function.Supplier;
 
 public class OZYWeaponTiers implements Tier, IronsWeaponTier {
 
+
     public static OZYWeaponTiers ELDRITCH_GREATSWORD = new OZYWeaponTiers(2031, 12, -3.1F, 10, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, () -> Ingredient.of(ItemRegistry.MITHRIL_INGOT.get()),
             new AttributeContainer(AttributeRegistry.ELDRITCH_SPELL_POWER, 0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
@@ -29,8 +30,27 @@ public class OZYWeaponTiers implements Tier, IronsWeaponTier {
     public static OZYWeaponTiers PERMAFROST_AXE = new OZYWeaponTiers(2031, 11, -2.9F, 10, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, () -> Ingredient.of(ItemRegistry.MITHRIL_INGOT.get()),
             new AttributeContainer(AttributeRegistry.ICE_SPELL_POWER, 0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
 
-    public static OZYWeaponTiers DRUID_SCYTHE = new OZYWeaponTiers(2031, 10, -2.5F, 10, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, () -> Ingredient.of(ItemRegistry.MITHRIL_INGOT.get()),
+    public static OZYWeaponTiers DRUID_SCYTHE = new OZYWeaponTiers(2031, 10, -2.7F, 10, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, () -> Ingredient.of(ItemRegistry.MITHRIL_INGOT.get()),
             new AttributeContainer(AttributeRegistry.NATURE_SPELL_POWER, 0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+
+    //test
+    //public static OZYWeaponTiers LIGHTNING_JAVELIN = new OZYWeaponTiers(2031, 10, -2.5F, 10, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, () -> Ingredient.of(ItemRegistry.MITHRIL_INGOT.get()),
+        //    new AttributeContainer(AttributeRegistry.LIGHTNING_SPELL_POWER, 0.15, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+
+    public static OZYWeaponTiers AMETHYST_WAND = new OZYWeaponTiers(2031, 1, -2.5F, 10, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, () -> Ingredient.of(ItemRegistry.MITHRIL_INGOT.get()),
+            new AttributeContainer(AttributeRegistry.SPELL_POWER, 0.10, AttributeModifier.Operation.ADD_MULTIPLIED_BASE));
+
+    public static OZYWeaponTiers SPELLBLADE_STAFF = new OZYWeaponTiers(2031, 1, -2.5F, 10, BlockTags.INCORRECT_FOR_NETHERITE_TOOL, () -> Ingredient.of(ItemRegistry.MITHRIL_INGOT.get()),
+            new AttributeContainer(AttributeRegistry.SPELL_POWER, .10,
+                    AttributeModifier.Operation.ADD_MULTIPLIED_BASE), (new AttributeContainer(AttributeRegistry.SPELL_RESIST, .25,
+            AttributeModifier.Operation.ADD_MULTIPLIED_BASE)));
+
+
+
+    //public static OZYWeaponTiers SPELLBLADE_STAFF = new OZYWeaponTiers(2, -3,
+          //  new AttributeContainer(AttributeRegistry.SPELL_POWER, .10, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+         //   new AttributeContainer(AttributeRegistry.MAX_MANA, 200, AttributeModifier.Operation.ADD_VALUE)));
+
 
 
 

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mem",
+    "lrl",
+    "mem"
+  ],
+  "result": {
+    "id": "ozymandias_sundries:fulminous_folio",
+    "count": 1
+  },
+  "key": {
+    "e": {
+      "item": "irons_spellbooks:energized_core"
+    },
+    "m": {
+      "item": "irons_spellbooks:magic_cloth"
+    },
+    "r": {
+      "item": "irons_spellbooks:rotten_spell_book"
+
+    },
+    "l": {
+      "item": "irons_spellbooks:lightning_bottle"
+    }
+  }
+}

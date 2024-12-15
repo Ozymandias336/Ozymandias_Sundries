@@ -1,8 +1,12 @@
 package net.ozymandias.ozymandiassundries;
 
 
+import io.redspace.ironsspellbooks.item.SpellBook;
 import net.ozymandias.ozymandiassundries.item.registries.CreativeModeTabs;
 import net.ozymandias.ozymandiassundries.item.registries.ItemRegistries;
+import net.ozymandias.ozymandiassundries.item.registries.OZYEntityRegistries;
+import net.ozymandias.ozymandiassundries.item.registries.SpellRegistries;
+import net.ozymandias.ozymandiassundries.item.render.SpellBookCurioRenderer;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -21,6 +25,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(OzymandiasSundries.MOD_ID)
@@ -44,9 +49,12 @@ public class OzymandiasSundries {
 
         CreativeModeTabs.register(modEventBus);
 
-        //ModItems.register(modEventBus);
-
         ItemRegistries.register(modEventBus);
+
+        SpellRegistries.register(modEventBus);
+
+        OZYEntityRegistries.register(modEventBus);
+
 
 
 
@@ -54,6 +62,18 @@ public class OzymandiasSundries {
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+    }
+
+    @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    public static class ClientModEvents
+    {
+        @SubscribeEvent
+        public static void onClientSetup(FMLClientSetupEvent event)
+        {
+            event.enqueueWork(() -> {
+                ItemRegistries.getOZYItems().stream().filter(item -> item.get() instanceof SpellBook).forEach((item) -> CuriosRendererRegistry.register(item.get(), SpellBookCurioRenderer::new));
+            });
+        }
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -80,13 +100,5 @@ public class OzymandiasSundries {
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
 
-        }
-    }
 }

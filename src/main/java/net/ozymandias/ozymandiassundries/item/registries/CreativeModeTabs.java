@@ -27,6 +27,7 @@ public class CreativeModeTabs {
                         output.accept(ItemRegistries.PERMAFROST_AXE.get());
                         output.accept(ItemRegistries.CINDEROUS_SCIMITAR.get());
                         output.accept(ItemRegistries.DRUID_SCYTHE.get());
+                        output.accept(ItemRegistries.SPELLBLADE_STAFF.get());
 
                        output.accept(ItemRegistries.FULMINOUS_FOLIO.get());
                     }).build());
