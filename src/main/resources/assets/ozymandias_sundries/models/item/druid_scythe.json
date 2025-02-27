@@ -11,7 +11,7 @@
     "gui": {
       "parent": "minecraft:item/handheld",
       "textures": {
-        "layer0": "ozymandias_sundries:item/scythe_blade_crystal"
+        "layer0": "ozymandias_sundries:item/druid_scythe_gui"
       }
     }
   }

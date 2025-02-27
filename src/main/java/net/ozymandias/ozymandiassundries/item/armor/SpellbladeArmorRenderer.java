@@ -7,8 +7,8 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 //public class SpellbladeArmorRenderer extends AbstractSpellCastingMobRenderer {
 
-   // public SpellbladeArmorRenderer(EntityRendererProvider.Context context) {
-    //    super(context, new SpellbladeArmorModel());
-   // }
+    // public SpellbladeArmorRenderer(EntityRendererProvider.Context context) {
+//   super(context, new SpellbladeArmorModel());
+// }
 
 //}

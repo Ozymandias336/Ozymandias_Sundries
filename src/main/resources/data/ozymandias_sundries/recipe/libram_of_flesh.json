@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "msm",
+    "brb",
+    "msm"
+  ],
+  "result": {
+    "id": "ozymandias_sundries:libram_of_flesh",
+    "count": 1
+  },
+  "key": {
+    "s": {
+      "item": "minecraft:skeleton_skull"
+    },
+    "m": {
+      "item": "irons_spellbooks:magic_cloth"
+    },
+    "r": {
+      "item": "irons_spellbooks:rotten_spell_book"
+
+    },
+    "b": {
+      "item": "irons_spellbooks:blood_vial"
+    }
+  }
+}

@@ -2,6 +2,7 @@ package net.ozymandias.ozymandiassundries;
 
 
 import io.redspace.ironsspellbooks.item.SpellBook;
+import net.minecraft.resources.ResourceLocation;
 import net.ozymandias.ozymandiassundries.item.registries.CreativeModeTabs;
 import net.ozymandias.ozymandiassundries.item.registries.ItemRegistries;
 import net.ozymandias.ozymandiassundries.item.registries.OZYEntityRegistries;
@@ -64,6 +65,10 @@ public class OzymandiasSundries {
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
+    public static ResourceLocation id(String name) {
+        return null;
+    }
+
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
@@ -98,6 +103,8 @@ public class OzymandiasSundries {
         // Do something when the server starts
 
     }
+
+
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
 

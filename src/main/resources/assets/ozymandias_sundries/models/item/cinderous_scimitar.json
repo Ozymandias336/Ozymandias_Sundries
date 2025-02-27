@@ -10,7 +10,7 @@
   "gui": {
     "parent": "minecraft:item/handheld",
     "textures": {
-      "layer0": "ozymandias_sundries:item/cinderous_scimitar"
+      "layer0": "ozymandias_sundries:item/cinderous_scimitar_gui"
     }
   }
 }

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sb ",
+    "bmb",
+    " b "
+  ],
+  "result": {
+    "id": "ozymandias_sundries:necromancers_ring",
+    "count": 1
+  },
+  "key": {
+    "s": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "m": {
+      "item": "irons_spellbooks:mithril_scrap"
+    },
+    "b": {
+      "item": "minecraft:bone"
+    }
+  }
+}

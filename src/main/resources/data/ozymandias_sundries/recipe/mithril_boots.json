@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C C",
+    "CMC"
+  ],
+  "key": {
+    "C": {
+      "item": "irons_spellbooks:magic_cloth"
+    },
+    "M": {
+      "item": "irons_spellbooks:mithril_ingot"
+    }
+  },
+  "result": {
+    "id": "ozymandias_sundries:mithril_boots",
+    "count": 1
+  }
+}

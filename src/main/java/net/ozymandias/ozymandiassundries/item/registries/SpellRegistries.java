@@ -32,6 +32,11 @@ public class SpellRegistries {
 
         public static final Supplier<AbstractSpell> PEFECTWARRIOR = registerSpell(new PerfectWarriorSpell());
 
+   // public static final Supplier<AbstractSpell> CONJURE_SWORD = registerSpell(new ConjureSwordSpell());
+
+
+    //  public static final Supplier<AbstractSpell> BUBBLE_BEAM = registerSpell(new BubbleBeamSpell());
+
        // public static final Supplier<AbstractSpell> SPARK = registerSpell(new SparkSpell());
 
 

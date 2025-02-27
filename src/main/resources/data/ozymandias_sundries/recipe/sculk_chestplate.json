@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NE",
+    "  ",
+    "  "
+  ],
+  "key": {
+    "N": {
+      "item": "irons_spellbooks:netherite_mage_chestplate"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "result": {
+    "id": "ozymandias_sundries:sculk_chestplate",
+    "count": 1
+  }
+}

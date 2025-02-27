@@ -47,6 +47,7 @@ public class LevitateSpell extends AbstractSpell {
             .setCooldownSeconds(45)
             .build();
 
+
     public LevitateSpell() {
         this.manaCostPerLevel = 10;
         this.baseSpellPower = 10;

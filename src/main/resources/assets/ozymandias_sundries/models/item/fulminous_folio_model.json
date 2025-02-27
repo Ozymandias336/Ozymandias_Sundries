@@ -3,7 +3,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "fulminous_folio",
-		"particle": "fulminous_folio_"
+		"particle": "fulminous_folio"
 	},
 	"elements": [
 		{

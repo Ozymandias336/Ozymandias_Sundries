@@ -10,7 +10,7 @@
     "gui": {
       "parent": "minecraft:item/handheld",
       "textures": {
-        "layer0": "ozymandias_sundries:item/permafrost_axe"
+        "layer0": "ozymandias_sundries:item/permafrost_axe_gui"
       }
     }
   }

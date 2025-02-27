@@ -3,20 +3,54 @@
   "item.ozymandias_sundries.sanctified_sword": "Sanctified Sword",
   "item.ozymandias_sundries.cinderous_scimitar": "Cinderous Scimitar",
   "item.ozymandias_sundries.permafrost_axe": "Permafrost Axe",
-  "item.ozymandias_sundries.eldritch_greatsword": "Eldritch Greatsword",
-  "item.ozymandias_sundries.druid_scythe": "Druid Scythe",
+  "item.ozymandias_sundries.eldritch_greatsword": "Sculk Greatsword",
+  "item.ozymandias_sundries.druid_scythe": "Druidic Scythe",
+  "item.ozymandias_sundries.ender_glaive": "Ender Glaive",
   "item.ozymandias_sundries.lightning_javelin": "Lightning Javelin",
+  "item.ozymandias_sundries.creaking_sword": "Creaking Sword",
+  "item.ozymandias_sundries.levin_sword": "Levin Sword",
+  "item.ozymandias_sundries.spectral_greatsword": "Spectral Greatsword",
+  "item.ozymandias_sundries.mithril_sword": "Mithril Spellblade",
+  "item.ozymandias_sundries.stormcaller_trident": "Stormcaller Trident",
+
+
+
+
+
   "item.ozymandias_sundries.amethyst_wand": "Amethyst Wand",
-  "item.ozymandias_sundries.spellblade_staff": "Spellblade Staff",
+  "item.ozymandias_sundries.spellblade_staff": "Sorcerer's Staff",
+  "item.ozymandias_sundries.fire_staff": "Sunfire Staff",
+
+  "item.ozymandias_sundries.necromancers_ring": "Necromancer's Ring",
+  "item.ozymandias_sundries.mana_amulet": "Amulet of Mana",
+  "item.ozymandias_sundries.health_amulet": "Amulet of Health",
+  "item.ozymandias_sundries.mermaid_amulet": "Aquatic Amulet",
+
+
+
+
 
   "item.ozymandias_sundries.fulminous_folio": "Fulminous Folio",
+  "item.ozymandias_sundries.libram_of_flesh": "Libram of Flesh",
+
 
   "spell.ozymandias_sundries.levitate": "Levitate",
   "spell.ozymandias_sundries.solar_ray": "Solar Ray",
-  "item.ozymandias_sundries.mithril_spellblade_helmet": "Mithril Spellblade Hat",
-  "item.ozymandias_sundries.mithril_spellblade_chestplate": "Mithril Spellblade Robes",
-  "item.ozymandias_sundries.mithril_spellblade_leggings": "Mithril Spellblade Leggings",
-  "item.ozymandias_sundries.mithril_spellblade_boots": "Mithril Spellblade Boots",
+
+
+
+  "effect.ozymandias_sundries.mage_armor": "Mage Armor",
+
+
+  "item.ozymandias_sundries.mithril_helmet": "Mithril Spellblade Hat",
+  "item.ozymandias_sundries.mithril_chestplate": "Mithril Spellblade Robes",
+  "item.ozymandias_sundries.mithril_leggings": "Mithril Spellblade Leggings",
+  "item.ozymandias_sundries.mithril_boots": "Mithril Spellblade Boots",
+
+  "item.ozymandias_sundries.sculk_helmet": "Sculk Occultist Hat",
+  "item.ozymandias_sundries.sculk_chestplate": "Sculk Occultist Robes",
+  "item.ozymandias_sundries.sculk_leggings": "Sculk Occultist Leggings",
+  "item.ozymandias_sundries.sculk_boots": "Sculk Occultist Boots",
 
 
 

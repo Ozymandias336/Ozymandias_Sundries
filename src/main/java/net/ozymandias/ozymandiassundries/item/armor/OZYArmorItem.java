@@ -25,7 +25,6 @@ public class OZYArmorItem extends ArmorItem implements GeoItem {
         super(material, type, properties);
         this.defaultModifiers = Suppliers.memoize(() ->
         {
-            // Looking at how ISS does this because it is 1 AM and I am tired
             int i = material.value().getDefense(type);
             float f = material.value().toughness();
             ItemAttributeModifiers.Builder builder = ItemAttributeModifiers.builder();
@@ -60,7 +59,6 @@ public class OZYArmorItem extends ArmorItem implements GeoItem {
                 new AttributeContainer(AttributeRegistry.SPELL_POWER, spellPower, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)};
     }
 
-    // Can also be used for giving two attributes, doesn't have to be resistance
     public static AttributeContainer[] schoolAttributesWithResistance(Holder<Attribute> school, Holder<Attribute> resistSchool, int mana, float schoolSpellPower, float spellPower, float resistSpellPower)
     {
         return new AttributeContainer[]{

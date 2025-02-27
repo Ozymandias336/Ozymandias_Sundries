@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  m",
+    "em ",
+    "we "
+  ],
+  "result": {
+    "id": "ozymandias_sundries:spectral_greatsword",
+    "count": 1
+  },
+  "key": {
+    "e": {
+      "item": "minecraft:emerald"
+    },
+    "m": {
+      "item": "irons_spellbooks:mithril_ingot"
+    },
+    "w": {
+      "item": "irons_spellbooks:weapon_parts"
+    }
+  }
+}

@@ -2,6 +2,7 @@ package net.ozymandias.ozymandiassundries.item.registries;
 
 import io.redspace.ironsspellbooks.IronsSpellbooks;
 import io.redspace.ironsspellbooks.entity.spells.fireball.MagicFireball;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -12,9 +13,16 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.ozymandias.ozymandiassundries.OzymandiasSundries;
 import net.ozymandias.ozymandiassundries.entity.spells.solar_ray.SolarRay;
 
+import java.util.function.Supplier;
+
 
 public class OZYEntityRegistries {
     private static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(Registries.ENTITY_TYPE, OzymandiasSundries.MOD_ID);
+
+
+   // public static final Supplier<EntityType<StormCallerTridentProjectileEntity>> STORM_CALLER_TRIDENT =
+   //         ENTITIES.register("stormcaller_trident", () -> EntityType.Builder.<StormCallerTridentProjectileEntity>of(StormCallerTridentProjectileEntity::new, MobCategory.MISC)
+         //           .sized(0.5f, 1.15f).build("stormcaller_trident"));
 
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);
@@ -31,17 +39,14 @@ public class OZYEntityRegistries {
                     .clientTrackingRange(4)
                     .build(ResourceLocation.fromNamespaceAndPath(OzymandiasSundries.MOD_ID, "sunburst").toString()));
 
-    //public static final DeferredHolder<EntityType<?>, EntityType<SummonedIronGolem>> SUMMONED_IRON_GOLEM =
-     //       ENTITIES.register("summoned_iron_golem", () -> EntityType.Builder.<SummonedIronGolem>of(SummonedIronGolem::new, MobCategory.CREATURE)
-              //      .sized(1.4F, 1.4F)
-                //    .clientTrackingRange(64)
-                //    .build(ResourceLocation.fromNamespaceAndPath(OzymandiasSundries.MOD_ID, "summoned_iron_golem").toString()));
 
-    //public static final DeferredHolder<EntityType<?>, EntityType<SparkProjectile>> SPARK_PROJECTILE =
-           // ENTITIES.register("spark", () -> EntityType.Builder.<SparkProjectile>of(SparkProjectile::new, MobCategory.MISC)
-             //       .sized(.5f, .5f)
-                //    .clientTrackingRange(64)
-                  //  .build(ResourceLocation.fromNamespaceAndPath(OzymandiasSundries.MOD_ID, "spark").toString()));
+
+
+
+
+
+
+
 
 
 
