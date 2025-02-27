@@ -24,13 +24,12 @@ public class SpellRegistries {
 
         public static final Supplier<AbstractSpell> LEVITATE = registerSpell(new LevitateSpell());
 
-        public static final Supplier<AbstractSpell> SOLAR_RAY = registerSpell(new SolarRay());
+       // public static final Supplier<AbstractSpell> SOLAR_RAY = registerSpell(new SolarRay());
 
-        public static final Supplier<AbstractSpell> DEATH_WARD = registerSpell(new DeathWard());
+        //public static final Supplier<AbstractSpell> DEATH_WARD = registerSpell(new DeathWard());
 
-        public static final Supplier<AbstractSpell> SUNBURST = registerSpell(new SunBurstSpell());
+        //public static final Supplier<AbstractSpell> SUNBURST = registerSpell(new SunBurstSpell());
 
-        public static final Supplier<AbstractSpell> PEFECTWARRIOR = registerSpell(new PerfectWarriorSpell());
 
    // public static final Supplier<AbstractSpell> CONJURE_SWORD = registerSpell(new ConjureSwordSpell());
 
