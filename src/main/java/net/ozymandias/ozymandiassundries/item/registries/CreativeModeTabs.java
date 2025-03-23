@@ -40,7 +40,7 @@ public class CreativeModeTabs {
                        // output.accept(ItemRegistries.KHAKKHARA.get());
                         output.accept(ItemRegistries.NECROMANCERS_RING.get());
                         output.accept(ItemRegistries.MANA_AMULET.get());
-                        output.accept(ItemRegistries.HEALTH_AMULET.get());
+                        //output.accept(ItemRegistries.HEALTH_AMULET.get());
                        // output.accept(ItemRegistries.MERMAID_AMULET.get());
 
                        output.accept(ItemRegistries.FULMINOUS_FOLIO.get());

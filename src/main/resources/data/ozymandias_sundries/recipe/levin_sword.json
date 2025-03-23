@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  b",
+    "lb ",
+    "wl "
+  ],
+  "result": {
+    "id": "ozymandias_sundries:levin_sword",
+    "count": 1
+  },
+  "key": {
+    "l": {
+      "item": "irons_spellbooks:lightning_bottle"
+    },
+    "b": {
+      "item": "irons_spellbooks:mithril_ingot"
+    },
+    "w": {
+      "item": "irons_spellbooks:weapon_parts"
+    }
+  }
+}

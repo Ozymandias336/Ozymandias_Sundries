@@ -16,7 +16,7 @@ import net.neoforged.neoforge.common.NeoForgeMod;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.ozymandias.ozymandiassundries.OzymandiasSundries;
-import net.ozymandias.ozymandiassundries.effects.FlightEffect;
+
 
 import static net.neoforged.neoforge.common.damagesource.DamageContainer.Reduction.MOB_EFFECTS;
 

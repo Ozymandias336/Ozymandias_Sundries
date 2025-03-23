@@ -1,6 +1,6 @@
 package net.ozymandias.ozymandiassundries.item.registries;
 
-import com.mojang.blaze3d.shaders.Effect;
+
 import io.redspace.ironsspellbooks.api.item.weapons.ExtendedSwordItem;
 import io.redspace.ironsspellbooks.api.item.weapons.MagicSwordItem;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
@@ -27,13 +27,8 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.ozymandias.ozymandiassundries.OzymandiasSundries;
 
-
-//import net.ozymandias.ozymandiassundries.item.curios.DruidsCrownCurio;
-//import net.ozymandias.ozymandiassundries.item.armor.SpellbladeArmorItem;
-//import net.ozymandias.ozymandiassundries.item.armor.SpellbladeArmorItem;
-//import net.ozymandias.ozymandiassundries.item.armor.SpellbladeArmorItem;
 import net.ozymandias.ozymandiassundries.item.armor.*;
-import net.ozymandias.ozymandiassundries.item.curios.AdroitGlovesCurio;
+
 import net.ozymandias.ozymandiassundries.item.curios.EldritchEyeCurio;
 import net.ozymandias.ozymandiassundries.item.curios.RingOfFeatherCurio;
 import net.ozymandias.ozymandiassundries.item.weapons.OZYWeaponTiers;
@@ -95,9 +90,6 @@ public static final DeferredHolder<Item, Item> MITHRIL_SWORD = ITEMS.register("m
   //          new MagicSwordItem(OZYWeaponTiers.BLOOD_LORDS_BIDENT, ItemPropertiesHelper.equipment().rarity(Rarity.RARE).attributes(ExtendedSwordItem.createAttributes(OZYWeaponTiers.BLOOD_LORDS_BIDENT)),
    //                 SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.RAISE_DEAD_SPELL, 8))));
 
-    //public static final DeferredHolder<Item, Item> STORMCALLER_TRIDENT = ITEMS.register("stormcaller_trident", () ->
-      //      new MagicSwordItem(OZYWeaponTiers.STORMCALLER_TRIDENT, ItemPropertiesHelper.equipment().rarity(Rarity.RARE).attributes(ExtendedSwordItem.createAttributes(OZYWeaponTiers.STORMCALLER_TRIDENT)),
-       //             SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.THUNDERSTORM_SPELL, 8))));
 
     public static final DeferredHolder<Item, Item> STORMCALLER_TRIDENT = ITEMS.register("stormcaller_trident", StormCallerTridentItem::new);
 
@@ -141,15 +133,8 @@ public static final DeferredHolder<Item, Item> MITHRIL_SWORD = ITEMS.register("m
             new CurioBaseItem(ItemPropertiesHelper.equipment(1)).withAttributes(Curios.NECKLACE_SLOT,
                     new AttributeContainer(AttributeRegistry.MAX_MANA, 100, AttributeModifier.Operation.ADD_VALUE)));
 
-    //public static final Supplier<CurioBaseItem> ELDRITCH_EYE = ITEMS.register("eldritch_eye", EldritchEyeCurio::new);
+    public static final Supplier<CurioBaseItem> ELDRITCH_EYE = ITEMS.register("eldritch_eye", EldritchEyeCurio::new);
 
-    //public static final Supplier<CurioBaseItem> ADROIT_GLOVES = ITEMS.register("adroit_gloves", () ->
-       //     new CurioBaseItem(ItemPropertiesHelper.equipment(1)).withAttributes(Curios.RING_SLOT,
-                    //new AttributeContainer(AttributeRegistry.CASTING_MOVESPEED, 0.50, AttributeModifier.Operation.ADD_VALUE),
-                  //  new AttributeContainer(AttributeRegistry.CAST_TIME_REDUCTION, 0.25, AttributeModifier.Operation.ADD_MULTIPLIED_BASE))
-    //);
-
-    //public static final DeferredItem<AdroitGlovesCurio> ADROIT_GLOVES = ITEMS.register("adroit_gloves", ()-> new AdroitGlovesCurio(ItemPropertiesHelper.equipment(1).rarity(Rarity.RARE)));
 
     public static final Supplier<CurioBaseItem> HEALTH_AMULET = ITEMS.register("health_amulet", () ->
             new CurioBaseItem(ItemPropertiesHelper.equipment(1)).withAttributes(Curios.NECKLACE_SLOT,
@@ -157,10 +142,6 @@ public static final DeferredHolder<Item, Item> MITHRIL_SWORD = ITEMS.register("m
             )
 
     );
-
-    //public static final Supplier<CurioBaseItem> FLAME_PENDANT = ITEMS.register("flame_pendant", () ->
-         //   new CurioBaseItem(ItemPropertiesHelper.equipment(1)).withAttributes(Curios.NECKLACE_SLOT,
-           //         new AttributeContainer(AttributeRegistry.FIRE_MAGIC_RESIST, 0.25, AttributeModifier.Operation.ADD_MULTIPLIED_BASE)));
 
     public static final Supplier<CurioBaseItem> MERMAID_AMULET = ITEMS.register("mermaid_amulet", () ->
             new CurioBaseItem(ItemPropertiesHelper.equipment(1)).withAttributes(Curios.NECKLACE_SLOT,
@@ -208,7 +189,7 @@ public static final DeferredHolder<Item, Item> MITHRIL_SWORD = ITEMS.register("m
 
 
 
-    //public static final DeferredHolder<Item, Item> NIMBUS_CORONET = ITEMS.register("nimbus_coronet", () -> new NimbusCoronetArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).rarity(Rarity.UNCOMMON).durability(ArmorItem.Type.HELMET.getDurability(26))));
+    // public static final DeferredHolder<Item, Item> NIMBUS_CORONET = ITEMS.register("nimbus_coronet", () -> new NimbusCoronetArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).rarity(Rarity.UNCOMMON).durability(ArmorItem.Type.HELMET.getDurability(26))));
 
    // public static final DeferredHolder<Item, Item> ANTLER_CROWN = ITEMS.register("antler_crown", () -> new AntlerCrownArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).rarity(Rarity.UNCOMMON).durability(ArmorItem.Type.HELMET.getDurability(26))));
 

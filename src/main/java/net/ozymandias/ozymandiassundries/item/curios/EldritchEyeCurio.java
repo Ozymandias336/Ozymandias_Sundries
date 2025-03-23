@@ -20,26 +20,17 @@ import java.util.List;
 
 
 public class EldritchEyeCurio extends SimpleDescriptiveCurio {
-    public EldritchEyeCurio() {
-        super(ItemPropertiesHelper.equipment().stacksTo(1).fireResistant(), Curios.NECKLACE_SLOT);
+    public EldritchEyeCurio() {super(ItemPropertiesHelper.equipment().stacksTo(1).fireResistant(), Curios.NECKLACE_SLOT);
     }
 
     @Override
     public void curioTick(SlotContext slotContext, ItemStack stack) {
-        super.curioTick(slotContext, stack);
+       super.curioTick(slotContext, stack);
         slotContext.entity().removeEffect(MobEffects.DARKNESS);
         slotContext.entity().addEffect(new MobEffectInstance(MobEffectRegistry.PLANAR_SIGHT, 200, 0));
 
-        //slotContext.entity().addEffect(new MobEffectInstance(OZYMobEffectRegistries.FLIGHT, 200, 0));
-        
     }
-
-
-
-
-
-
-    }
+}
 
 
 
