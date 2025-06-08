@@ -9,6 +9,7 @@ import net.ozymandias.ozymandiassundries.spells.evocation.PerfectWarriorSpell;
 import net.ozymandias.ozymandiassundries.spells.holy.DeathWard;
 import net.ozymandias.ozymandiassundries.spells.holy.SolarRay;
 import net.ozymandias.ozymandiassundries.spells.holy.SunBurstSpell;
+import net.ozymandias.ozymandiassundries.spells.lightning.LightningWarpSpell;
 
 import java.util.function.Supplier;
 
@@ -23,8 +24,11 @@ public class SpellRegistries {
 
 
         public static final Supplier<AbstractSpell> LEVITATE = registerSpell(new LevitateSpell());
+        public static final Supplier<AbstractSpell> LIGHTNING_WARP = registerSpell(new LightningWarpSpell());
 
-       // public static final Supplier<AbstractSpell> SOLAR_RAY = registerSpell(new SolarRay());
+
+
+    // public static final Supplier<AbstractSpell> SOLAR_RAY = registerSpell(new SolarRay());
 
         //public static final Supplier<AbstractSpell> DEATH_WARD = registerSpell(new DeathWard());
 

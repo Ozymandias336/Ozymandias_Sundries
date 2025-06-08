@@ -31,6 +31,9 @@ import net.ozymandias.ozymandiassundries.item.armor.*;
 
 import net.ozymandias.ozymandiassundries.item.curios.EldritchEyeCurio;
 import net.ozymandias.ozymandiassundries.item.curios.RingOfFeatherCurio;
+import net.ozymandias.ozymandiassundries.item.spellbooks.AlchemicalCompendiumSpellBook;
+import net.ozymandias.ozymandiassundries.item.spellbooks.FulminousFolioSpellBook;
+import net.ozymandias.ozymandiassundries.item.spellbooks.LibramOfFleshSpellBook;
 import net.ozymandias.ozymandiassundries.item.weapons.OZYWeaponTiers;
 import net.ozymandias.ozymandiassundries.item.weapons.StormCallerTridentItem;
 
@@ -110,17 +113,25 @@ public static final DeferredHolder<Item, Item> MITHRIL_SWORD = ITEMS.register("m
 
  //spellbooks
 
-    public static final DeferredHolder<Item, Item> FULMINOUS_FOLIO = ITEMS.register("fulminous_folio", () -> new SpellBook(10)
-         .withSpellbookAttributes(new AttributeContainer(AttributeRegistry.COOLDOWN_REDUCTION, .08,
-                 AttributeModifier.Operation.ADD_MULTIPLIED_BASE), (new AttributeContainer(AttributeRegistry.LIGHTNING_SPELL_POWER, .08,
-                         AttributeModifier.Operation.ADD_MULTIPLIED_BASE)),
-                 new AttributeContainer(AttributeRegistry.MAX_MANA, 200, AttributeModifier.Operation.ADD_VALUE)));
+  //  public static final DeferredHolder<Item, Item> FULMINOUS_FOLIO = ITEMS.register("fulminous_folio", () -> new SpellBook(10)
+      //   .withSpellbookAttributes(new AttributeContainer(AttributeRegistry.LIGHTNING_SPELL_POWER, .10,
+            //     AttributeModifier.Operation.ADD_MULTIPLIED_BASE), (new AttributeContainer(AttributeRegistry.COOLDOWN_REDUCTION, .10,
+                //         AttributeModifier.Operation.ADD_MULTIPLIED_BASE)),
+               //  new AttributeContainer(AttributeRegistry.MAX_MANA, 200, AttributeModifier.Operation.ADD_VALUE)));
 
-    public static final DeferredHolder<Item, Item> LIBRAM_OF_FLESH = ITEMS.register("libram_of_flesh", () -> new SpellBook(10)
-            .withSpellbookAttributes(new AttributeContainer(AttributeRegistry.SUMMON_DAMAGE, .08,
-                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE), (new AttributeContainer(AttributeRegistry.BLOOD_SPELL_POWER, .08,
-                            AttributeModifier.Operation.ADD_MULTIPLIED_BASE)),
-                    new AttributeContainer(AttributeRegistry.MAX_MANA, 200, AttributeModifier.Operation.ADD_VALUE)));
+    public static final DeferredHolder<Item, Item> FULMINOUS_FOLIO = ITEMS.register("fulminous_folio", FulminousFolioSpellBook::new);
+
+    public static final DeferredHolder<Item, Item> LIBRAM_OF_FLESH = ITEMS.register("libram_of_flesh", LibramOfFleshSpellBook::new);
+
+    public static final DeferredHolder<Item, Item> ALCHEMICAL_COMPENDIUM = ITEMS.register("alchemical_compendium", AlchemicalCompendiumSpellBook::new);
+
+
+
+    //public static final DeferredHolder<Item, Item> LIBRAM_OF_FLESH = ITEMS.register("libram_of_flesh", () -> new SpellBook(10)
+      //      .withSpellbookAttributes(new AttributeContainer(AttributeRegistry.BLOOD_SPELL_POWER, .10,
+          //                  AttributeModifier.Operation.ADD_MULTIPLIED_BASE), (new AttributeContainer(AttributeRegistry.SUMMON_DAMAGE, .10,
+                    //        AttributeModifier.Operation.ADD_MULTIPLIED_BASE)),
+                  //  new AttributeContainer(AttributeRegistry.MAX_MANA, 200, AttributeModifier.Operation.ADD_VALUE)));
 
     //Curios
 
@@ -148,6 +159,7 @@ public static final DeferredHolder<Item, Item> MITHRIL_SWORD = ITEMS.register("m
                     new AttributeContainer(Attributes.WATER_MOVEMENT_EFFICIENCY, 50, AttributeModifier.Operation.ADD_VALUE),
              new AttributeContainer(Attributes.OXYGEN_BONUS, 50, AttributeModifier.Operation.ADD_VALUE))
     );
+
 
 
     public static final DeferredItem<ArmorItem> MITHRIL_HELMET = ITEMS.register("mithril_helmet", () -> new MithrilMageArmorItem(ArmorItem.Type.HELMET, ItemPropertiesHelper.equipment(1).durability(ArmorItem.Type.HELMET.getDurability(37))));

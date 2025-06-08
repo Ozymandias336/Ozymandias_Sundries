@@ -2,10 +2,8 @@ package net.ozymandias.ozymandiassundries.item.spellbooks;
 
 import io.redspace.ironsspellbooks.api.item.curios.AffinityData;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
-import io.redspace.ironsspellbooks.api.registry.SpellDataRegistryHolder;
 import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
 import io.redspace.ironsspellbooks.item.SpellBook;
-import io.redspace.ironsspellbooks.item.UniqueSpellBook;
 import io.redspace.ironsspellbooks.item.weapons.AttributeContainer;
 import io.redspace.ironsspellbooks.registries.ComponentRegistry;
 import io.redspace.ironsspellbooks.util.TooltipsUtils;
@@ -18,12 +16,12 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 import java.util.Map;
 
-public class FulminousFolioSpellBook extends SpellBook {
-    public FulminousFolioSpellBook() {
+public class LibramOfFleshSpellBook extends SpellBook {
+    public LibramOfFleshSpellBook() {
         super(10);
         withSpellbookAttributes(
-                new AttributeContainer(AttributeRegistry.LIGHTNING_SPELL_POWER, 0.10, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                new AttributeContainer(AttributeRegistry.COOLDOWN_REDUCTION, 0.10, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                new AttributeContainer(AttributeRegistry.BLOOD_SPELL_POWER, 0.10, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                new AttributeContainer(AttributeRegistry.SUMMON_DAMAGE, 0.10, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                 new AttributeContainer(AttributeRegistry.MAX_MANA, 200, AttributeModifier.Operation.ADD_VALUE));
     }
 
@@ -46,11 +44,11 @@ public class FulminousFolioSpellBook extends SpellBook {
 
         super.initializeSpellContainer(itemStack);
         itemStack.set(ComponentRegistry.AFFINITY_COMPONENT, new AffinityData(Map.of(
-                SpellRegistry.LIGHTNING_LANCE_SPELL.get().getSpellResource(), 1,
-                SpellRegistry.LIGHTNING_BOLT_SPELL.get().getSpellResource(), 1
+                SpellRegistry.RAISE_DEAD_SPELL.get().getSpellResource(), 1,
+                SpellRegistry.WITHER_SKULL_SPELL.get().getSpellResource(), 1
         )));
-    }
 
 
-}
+
+}}
 
