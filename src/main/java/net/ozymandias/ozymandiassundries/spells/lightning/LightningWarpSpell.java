@@ -52,7 +52,7 @@ public class LightningWarpSpell extends AbstractSpell {
 
     public LightningWarpSpell() {
         this.baseSpellPower = 12;
-        this.spellPowerPerLevel = 4;
+        this.spellPowerPerLevel = 2;
         this.baseManaCost = 60;
         this.manaCostPerLevel = 10;
         this.castTime = 0;
